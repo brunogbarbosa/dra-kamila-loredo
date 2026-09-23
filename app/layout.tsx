@@ -16,6 +16,18 @@ export const metadata: Metadata = {
     description: site.seo.description,
     locale: 'pt_BR',
     type: 'website',
+    images: [{
+      url: '/og-kamila-loredo.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Dra. Kamila Loredo — harmonização facial com naturalidade em Franca, SP',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: site.seo.title,
+    description: site.seo.description,
+    images: ['/og-kamila-loredo.jpg'],
   },
 };
 export default function RootLayout({children}: Readonly<{children:React.ReactNode}>) {
